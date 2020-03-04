@@ -5,7 +5,7 @@ class Libreria:
         self.p = p
         self.importancia = 0
         
-    #para poder ordenar llista de librerias por importancia
+    #para poder ordenar lista de librerias por importancia
     def __lt__(self, other):
         return self.importancia<other.importancia        
     
