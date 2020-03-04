@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from data import Libreria
 from data import Libro
 import sys
@@ -53,3 +54,7 @@ def getLibros():
 
 
 
+=======
+import sys
+
+>>>>>>> bf507bc1b61bf81547278fac1720eecc9af8a376
