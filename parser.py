@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from data import Libreria
 from data import Libro
 import sys
@@ -13,35 +12,25 @@ libros = []
 librerias = []
 
 nums = fd.readline().split()
-nlibros = nums[0]
-nlibreria = nums[1]
-dias = nums[2]
+nlibros = int(nums[0])
+nlibrerias = int(nums[1])
+dias = int(nums[2])
 
-for i, j in enumerate(line.split()):
+for i, j in enumerate(fd.readline().split()):
+    libro = Libro(i ,j)
+    libros.append(libro)
 
-for line in fd:
-    if linecounter==0:
-        nums = line.split()
-        nlibros = nums[0]
-        nlibreria = nums[1]
-        dias = nums[2]
-    elif linecounter == 1:
-        for i, j in enumerate(line.split()):
-            libro = Libro(i ,j)
-            libros.append(libro)
-
-    else:
-
-
-        
+for i in range(nlibrerias):
+    libreria = fd.readline().split()
+    sp = libreria[1]
+    p = libreria[2]
+    libros_i = []
+    for j in fd.readline().split():
+        libros_i.append(libros[int(j)])
     
+    libreria = Libreria(libros_i, sp, p)
+    librerias.append(libreria)
 
-        
-
-
-
-
-    linecounter+=1 
 
 
 def getDias():
@@ -50,11 +39,13 @@ def getDias():
 def getLibros():
     return libros
 
+def getLibrerias():
+    return librerias
 
 
 
 
-=======
-import sys
 
->>>>>>> bf507bc1b61bf81547278fac1720eecc9af8a376
+
+
+
