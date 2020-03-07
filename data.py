@@ -7,7 +7,6 @@ class Libreria:
         self.p = p           # Numero de libros que se pueden procesar a la vez
         self.avg = avg       # Media de los scores de los libros
       
-    
     # Se calcula la productividad como el numero de libros que puede procesar dado
     # un dia de inicio 
     def productividad(self, dia, limite):
