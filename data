@@ -1,7 +1,0 @@
-'in/a_example.txt' : 'out/a_example.out',
-            'in/b_read_on.txt' : 'out/b_read_on.out',
-            'in/c_incunabula.txt' : 'out/c_incunabula.out',
-            'in/d_tough_choices.txt': 'out/d_tough_choices.out' ,
-            'in/e_so_many_books.txt' :  'out/e_so_many_books.out',
-            'in/f_libraries_of_the_world.txt' : 'out/f_libraries_of_the_world.out'
-        }
